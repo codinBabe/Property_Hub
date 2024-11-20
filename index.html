@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>9ja@PropertyHub</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./images/Logo.svg" alt="9ja@PropertyHub" />
+        </div>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Buy</a>
+        <a href="#">Rent</a>
+        <a href="#">Companies</a>
+        <a href="#">Manage Rentals</a>
+        <a href="#">Login</a>
+        <button class="custom-btn">Register</button>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h2>Look for the perfect location to get accommodation.</h2>
+          <p>
+            This platform also helps real estate managers in placing good
+            tenants in their real estate property so as not to lose in the
+            business.
+          </p>
+        </div>
+        <div class="search-bar">
+          <div class="search-options">
+            <button class="tab">Buy</button>
+            <button class="tab active">Rent</button>
+          </div>
+          <div class="dropdowns">
+            <label for="location">Location</label>
+            <div class="custom-select">
+              <select class="dropdown" id="location">
+                <option value="Kwara">Kwara</option>
+                <option value="Lagos">Lagos</option>
+                <option value="Abuja">Abuja</option>
+                <option value="Oyo">Oyo</option>
+                <option value="Niger">Niger</option>
+                <option value="Ogun">Ogun</option>
+                <option value="River">River</option>
+                <option value="Ondo">Ondo</option>
+              </select>
+            </div>
+            <label for="property-type">Property Type</label>
+            <div class="custom-select">
+              <select class="dropdown" id="property-type">
+                <option value="4-bedroom-duplex">4 bedroom duplex</option>
+                <!-- Add more options as needed -->
+              </select>
+            </div>
+            <label for="price">Price</label>
+            <div class="custom-select">
+              <select class="dropdown" id="price">
+                <option value="25000">$25000</option>
+                <!-- Add more options as needed -->
+              </select>
+            </div>
+            <button class="search-btn">Search</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Section -->
+      <section class="featured">
+        <h2>Featured</h2>
+        <p>This includes the number of companies that we featured in.</p>
+        <div class="featured-cta">
+          <p>12 Companies featured</p>
+          <div>
+            <button class="featured-btn-right">
+              <img src="./images/icons/arrow-forward.svg" alt="icon" />
+            </button>
+            <button class="featured-btn-left">
+              <img src="./images/icons/arrow-forward.svg" alt="icon" />
+            </button>
+          </div>
+        </div>
+        <div class="featured-property">
+          <img src="./images/featured/featured-1.svg" alt="Property 1" />
+          <img src="./images/featured/featured-2.svg" alt="Property 2" />
+          <img src="./images/featured/featured-3.svg" alt="Property 3" />
+          <img src="./images/featured/featured-4.svg" alt="Property 4" />
+          <img src="./images/featured/featured-5.svg" alt="Property 5" />
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="services">
+        <div class="service-content">
+          <h3>9JAPROPERTYHUB</h3>
+          <h2>Our Services</h2>
+          <p>
+            We offer you the best services that will favor you when renting or
+            purchasing properties.
+          </p>
+        </div>
+        <div class="services-container">
+          <div class="service-1">
+            <div>
+              <img src="./images/icons/cost-total.svg" alt="Service 2" />
+            </div>
+            <p>Cost Management</p>
+          </div>
+          <div class="service-2">
+            <div>
+              <img src="./images/icons/landscape.svg" alt="Service 3" />
+            </div>
+            <p>List out available properties</p>
+          </div>
+          <div class="service-3">
+            <div>
+              <img
+                src="./images/icons/domain-verification.svg"
+                alt="Service 1"
+              />
+            </div>
+            <p>Full personnels verification.</p>
+          </div>
+          <div class="service-4">
+            <div>
+              <img src="./images/icons/price-change.svg" alt="Service 4" />
+            </div>
+            <p>Affordable Prices</p>
+          </div>
+          <div class="service-5">
+            <div>
+              <img
+                src="./images/icons/googlemarketingplatform.svg"
+                alt="Service 5"
+              />
+            </div>
+            <p>Buying and Selling of properties.</p>
+          </div>
+        </div>
+      </section>
+      <!-- LIST OUT PROPERTIES -->
+      <section class="properties">
+        <div class="property-1">
+          <div class="img-container">
+            <img src="./images/properties/property-1.png" alt="" />
+          </div>
+          <div class="property-1-content">
+            <div>
+              <h3>LIST OUT PROPERTIES</h3>
+              <h2>List out available properties both for sale and rent.</h2>
+              <p>
+                Properties listed on this platform are quite affordable and you
+                don’t have to panic about fake or agents that are not
+                trustworthy. All these are been taken care of. Register on this
+                platform to view available properties for sale based on your
+                preferred location.
+              </p>
+            </div>
+            <button>Learn More</button>
+          </div>
+        </div>
+        <div class="property-2">
+          <div class="property-2-content">
+            <div>
+              <h3>BUY A HOUSE</h3>
+              <h2>Buy Luxorious and affordable house.</h2>
+              <p>
+                Properties listed on this platform are quite affordable and you
+                don’t have to panic about fake or agents that are not
+                trustworthy. All these are been taken care of. Register on this
+                platform to view available properties for sale based on your
+                preferred location.
+              </p>
+            </div>
+            <button>Learn More</button>
+          </div>
+          <div class="img-container">
+            <img src="./images/properties/property-2.png" alt="" />
+          </div>
+        </div>
+        <div class="property-3">
+          <div class="img-container">
+            <img src="./images/properties/property-3.png" alt="" />
+          </div>
+          <div class="property-3-content">
+            <div>
+              <h3>RENT A HOUSE</h3>
+              <h2>Look for affordable apartment to stay</h2>
+              <p>
+                Properties listed on this platform are quite affordable and you
+                don’t have to panic about fake or agents that are not
+                trustworthy. All these are been taken care of. Register on this
+                platform to view available properties for sale based on your
+                preferred location.
+              </p>
+            </div>
+            <button>Learn More</button>
+          </div>
+        </div>
+      </section>
+      <!-- RECENTLY ADDED PROPERTIES -->
+      <section class="more-properties">
+        <h2>Recently Added Properties</h2>
+        <p>
+          This includes the list of properties that is been added to the
+          platform recently.
+        </p>
+        <div class="tabs">
+          <p>Last updated: 12 Jun, 2021</p>
+          <p>400 properties added.</p>
+        </div>
+        <div class="listed-properties">
+          <div class="listed-property-1">
+            <div class="listed-property-1-content">
+              <div class="listed-property-1-img-container">
+                <img
+                  src="./images/properties/property-4.svg"
+                  alt="Property 4"
+                />
+              </div>
+              <div>
+                <h3>Detached duplex for sale</h3>
+                <div class="location">
+                  <img src="./images/icons/location.svg" alt="Location" />
+                  <p>Ibeju-Lekki, Lagos.</p>
+                </div>
+                <p>
+                  Tastefully finished 5 bedroom duplex with bq in a mini &
+                  secured estate location: wuye price: 200m
+                </p>
+                <hr />
+                <p class="price">#250,000,000.00</p>
+              </div>
+            </div>
+            <div class="amenities">
+              <div>
+                <img src="./images/icons/bathroom.svg" alt="bathroom" />
+                <p>7 Bathrooms</p>
+              </div>
+              <div>
+                <img src="./images/icons/bedroom.svg" alt="bedroom" />
+                <p>7 Bedrooms</p>
+              </div>
+              <div>
+                <img src="./images/icons/toilet.svg" alt="Toilet" />
+                <p>8 Toilets</p>
+              </div>
+              <div>
+                <img src="./images/icons/car.svg" alt="car" />
+                <p>12 Parking Spaces.</p>
+              </div>
+            </div>
+          </div>
+          <div class="listed-property-1">
+            <div class="listed-property-1-content">
+              <div class="listed-property-1-img-container">
+                <img
+                  src="./images/properties/property-5.svg"
+                  alt="Property 5"
+                />
+              </div>
+              <div>
+                <h3>Detached duplex for sale</h3>
+                <div class="location">
+                  <img src="./images/icons/location.svg" alt="Location" />
+                  <p>Ibeju-Lekki, Lagos.</p>
+                </div>
+                <p>
+                  Tastefully finished 5 bedroom duplex with bq in a mini &
+                  secured estate location: wuye price: 200m
+                </p>
+                <hr />
+                <p class="price">#250,000,000.00</p>
+              </div>
+            </div>
+            <div class="amenities">
+              <div>
+                <img src="./images/icons/bathroom.svg" alt="bathroom" />
+                <p>7 Bathrooms</p>
+              </div>
+              <div>
+                <img src="./images/icons/bedroom.svg" alt="bedroom" />
+                <p>7 Bedrooms</p>
+              </div>
+              <div>
+                <img src="./images/icons/toilet.svg" alt="Toilet" />
+                <p>8 Toilets</p>
+              </div>
+              <div>
+                <img src="./images/icons/car.svg" alt="car" />
+                <p>12 Parking Spaces.</p>
+              </div>
+            </div>
+          </div>
+          <div class="listed-property-1">
+            <div class="listed-property-1-content">
+              <div class="listed-property-1-img-container">
+                <img
+                  src="./images/properties/property-6.svg"
+                  alt="Property 6"
+                />
+              </div>
+              <div>
+                <h3>Detached duplex for sale</h3>
+                <div class="location">
+                  <img src="./images/icons/location.svg" alt="Location" />
+                  <p>Ibeju-Lekki, Lagos.</p>
+                </div>
+                <p>
+                  Tastefully finished 5 bedroom duplex with bq in a mini &
+                  secured estate location: wuye price: 200m
+                </p>
+                <hr />
+                <p class="price">#250,000,000.00</p>
+              </div>
+            </div>
+            <div class="amenities">
+              <div>
+                <img src="./images/icons/bathroom.svg" alt="bathroom" />
+                <p>7 Bathrooms</p>
+              </div>
+              <div>
+                <img src="./images/icons/bedroom.svg" alt="bedroom" />
+                <p>7 Bedrooms</p>
+              </div>
+              <div>
+                <img src="./images/icons/toilet.svg" alt="Toilet" />
+                <p>8 Toilets</p>
+              </div>
+              <div>
+                <img src="./images/icons/car.svg" alt="car" />
+                <p>12 Parking Spaces.</p>
+              </div>
+            </div>
+          </div>
+          <div class="listed-property-1">
+            <div class="listed-property-1-content">
+              <div class="listed-property-1-img-container">
+                <img
+                  src="./images/properties/property-8.svg"
+                  alt="Property 8"
+                />
+              </div>
+              <div>
+                <h3>Detached duplex for sale</h3>
+                <div class="location">
+                  <img src="./images/icons/location.svg" alt="Location" />
+                  <p>Ibeju-Lekki, Lagos.</p>
+                </div>
+                <p>
+                  Tastefully finished 5 bedroom duplex with bq in a mini &
+                  secured estate location: wuye price: 200m
+                </p>
+                <hr />
+                <p class="price">#250,000,000.00</p>
+              </div>
+            </div>
+            <div class="amenities">
+              <div>
+                <img src="./images/icons/bathroom.svg" alt="bathroom" />
+                <p>7 Bathrooms</p>
+              </div>
+              <div>
+                <img src="./images/icons/bedroom.svg" alt="bedroom" />
+                <p>7 Bedrooms</p>
+              </div>
+              <div>
+                <img src="./images/icons/toilet.svg" alt="Toilet" />
+                <p>8 Toilets</p>
+              </div>
+              <div>
+                <img src="./images/icons/car.svg" alt="car" />
+                <p>12 Parking Spaces.</p>
+              </div>
+            </div>
+          </div>
+          <div class="listed-property-1">
+            <div class="listed-property-1-content">
+              <div class="listed-property-1-img-container">
+                <img
+                  src="./images/properties/property-7.svg"
+                  alt="Property 7"
+                />
+              </div>
+              <div>
+                <h3>Detached duplex for sale</h3>
+                <div class="location">
+                  <img src="./images/icons/location.svg" alt="Location" />
+                  <p>Ibeju-Lekki, Lagos.</p>
+                </div>
+                <p>
+                  Tastefully finished 5 bedroom duplex with bq in a mini &
+                  secured estate location: wuye price: 200m
+                </p>
+                <hr />
+                <p class="price">#250,000,000.00</p>
+              </div>
+            </div>
+            <div class="amenities">
+              <div>
+                <img src="./images/icons/bathroom.svg" alt="bathroom" />
+                <p>7 Bathrooms</p>
+              </div>
+              <div>
+                <img src="./images/icons/bedroom.svg" alt="bedroom" />
+                <p>7 Bedrooms</p>
+              </div>
+              <div>
+                <img src="./images/icons/toilet.svg" alt="Toilet" />
+                <p>8 Toilets</p>
+              </div>
+              <div>
+                <img src="./images/icons/car.svg" alt="car" />
+                <p>12 Parking Spaces.</p>
+              </div>
+            </div>
+          </div>
+          <div class="listed-property-1">
+            <div class="listed-property-1-content">
+              <div class="listed-property-1-img-container">
+                <img
+                  src="./images/properties/property-8.svg"
+                  alt="Property 8"
+                />
+              </div>
+              <div>
+                <h3>Detached duplex for sale</h3>
+                <div class="location">
+                  <img src="./images/icons/location.svg" alt="Location" />
+                  <p>Ibeju-Lekki, Lagos.</p>
+                </div>
+                <p>
+                  Tastefully finished 5 bedroom duplex with bq in a mini &
+                  secured estate location: wuye price: 200m
+                </p>
+                <hr />
+                <p class="price">#250,000,000.00</p>
+              </div>
+            </div>
+            <div class="amenities">
+              <div>
+                <img src="./images/icons/bathroom.svg" alt="bathroom" />
+                <p>7 Bathrooms</p>
+              </div>
+              <div>
+                <img src="./images/icons/bedroom.svg" alt="bedroom" />
+                <p>7 Bedrooms</p>
+              </div>
+              <div>
+                <img src="./images/icons/toilet.svg" alt="Toilet" />
+                <p>8 Toilets</p>
+              </div>
+              <div>
+                <img src="./images/icons/car.svg" alt="car" />
+                <p>12 Parking Spaces.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-container">
+          <button>Prev</button>
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button>7</button>
+          <button>Next</button>
+        </div>
+      </section>
+      <!-- ACHIEVEMENT -->
+      <section class="achievement">
+        <div class="achievement-content">
+          <div>
+            <h2>PROPERTY LISTINGS</h2>
+            <p>98,527</p>
+          </div>
+          <div>
+            <h2>AREAS COVERED</h2>
+            <p>384</p>
+          </div>
+          <div>
+            <h2>AGENTS & DEVELOPERS</h2>
+            <p>16,400</p>
+          </div>
+        </div>
+      </section>
+      <!-- TESTIMONIALS -->
+      <section class="testimonials">
+        <h2>WHAT OUR CUSTOMERS SAY</h2>
+        <p>Our Customer’s Feedback.</p>
+        <hr />
+        <div class="testimonials-content">
+          <!-- User Images Slider -->
+          <div class="testimonial-images">
+            <button class="slider-btn left">
+              <img src="./images/icons/arrow-forward-black.svg" alt="" />
+            </button>
+            <div class="images-wrapper">
+              <img
+                src="./images/testimonials/user-3.png"
+                alt="John Smith"
+                data-name="John Smith"
+                data-country="British"
+                data-testimonial="Absolutely incredible service! They made everything so smooth and hassle-free for me."
+              />
+              <img
+                src="./images/testimonials/user-5.png"
+                alt="Jane Smith"
+                data-name="Jane Smith"
+                data-country="South African"
+                data-testimonial="I was able to find the perfect home for my family in no time. I am so grateful for the services provided by 9jaPropertyHub."
+              />
+              <img
+                src="./images/testimonials/user-1.png"
+                alt="Tunde Martins"
+                class="active"
+                data-name="Tunde Martins"
+                data-country="Nigerian"
+                data-testimonial="9jaPropertyHub is a very good platform where you can see quality and affordable properties to buy. It is one of the best platform for real estate in nigeria with qualified and experienced agents and developers that helps in giving you the best."
+              />
+              <img
+                src="./images/testimonials/user-4.png"
+                alt="Donald Doe"
+                data-name="Donald Doe"
+                data-country="Canadian"
+                data-testimonial="I was able to find the perfect home for my family in no time. I am so grateful for the services provided by 9jaPropertyHub."
+              />
+
+              <img
+                src="./images/testimonials/user-2.png"
+                alt="John Doe"
+                data-name="John Doe"
+                data-country="American"
+                data-testimonial="This platform has made finding properties so much easier. I highly recommend their services to anyone looking for affordable homes."
+              />
+            </div>
+            <button class="slider-btn right">
+              <img src="./images/icons/arrow-forward-black.svg" alt="" />
+            </button>
+          </div>
+
+          <!-- Testimonial Content -->
+          <div class="testimonial-details">
+            <h3>Tunde Martins</h3>
+            <p class="testimonial-text">
+              9jaPropertyHub is a very good platform where you can see quality
+              and affordable properties to buy. It is one of the best platform
+              for real estate in nigeria with qualified and experienced agents
+              and developers that helps in giving you the best.
+            </p>
+            <div class="author-info">
+              <p class="name">Tunde Martins</p>
+              <p class="country">Nigerian</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta">
+        <div class="cta-content">
+          <div>
+            <h2>Download App on:</h2>
+            <p>
+              Download our Android app or iOS app to get quick access to
+              property on 9jaPropertyHub from your mobile phone.
+            </p>
+          </div>
+
+          <div class="cta-btn-container">
+            <button class="cta-btn-left">
+              <img src="./images/icons/playstore.svg" alt="icon" />
+              GET IT ON Google Play
+            </button>
+            <button class="cta-btn-right">
+              <img src="./images/icons/apple.svg" alt="icon" />
+              Download on the App Store
+            </button>
+          </div>
+        </div>
+        <div>
+          <img src="./images/Iphone.png" alt="iphone" />
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-content">
+        <div class="about-us">
+          <h2>About Us</h2>
+          <p>
+            This platform also help real estate managers in placing good tenants
+            in their real estate property so as not to loose in the business.
+          </p>
+          <div class="social-links">
+            <img src="./images/icons/facebook.svg" alt="facebook" />
+            <img src="./images/icons/twitter.svg" alt="twitter" />
+            <img src="./images/icons/instagram.svg" alt="instagram" />
+            <img src="./images/icons/linkedin.svg" alt="linkedin" />
+          </div>
+        </div>
+        <div class="links">
+          <h2>Links</h2>
+          <p>Terms of Use</p>
+          <p>Privacy Policy</p>
+          <p>Cookie</p>
+          <p>Blog</p>
+        </div>
+        <div class="companies">
+          <h2>Companies</h2>
+          <p>Agent</p>
+          <p>Developer</p>
+        </div>
+        <div class="listed-areas">
+          <h2>Property Listed Areas</h2>
+          <p>Lagos State</p>
+          <p>Oyo State</p>
+          <p>Akwa-Ibom</p>
+          <p>Rivers State</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&COPY; | All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
