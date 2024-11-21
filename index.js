@@ -20,6 +20,15 @@ images.forEach((image) => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.querySelector(".hamburger");
+  const menu = document.querySelector(".menu");
+
+  hamburger.addEventListener("click", function () {
+    menu.classList.toggle("active");
+  });
+});
+
 document.querySelectorAll(".custom-select").forEach((selectWrapper) => {
   const selectElement = selectWrapper.querySelector("select");
   const selectedDiv = document.createElement("div");
@@ -63,17 +72,19 @@ document.querySelectorAll(".custom-select").forEach((selectWrapper) => {
   });
 });
 
-function closeAllSelect(elmnt) {
+function closeAllSelect(exceptElement) {
   const items = document.getElementsByClassName("select-items");
   const selected = document.getElementsByClassName("select-selected");
   for (let i = 0; i < selected.length; i++) {
-    if (elmnt === selected[i]) {
+    if (exceptElement === selected[i]) {
       continue;
     }
     selected[i].classList.remove("select-arrow-active");
   }
   for (let i = 0; i < items.length; i++) {
-    items[i].classList.add("select-hide");
+    if (!exceptElement || exceptElement.nextSibling !== items[i]) {
+      items[i].classList.add("select-hide");
+    }
   }
 }
 

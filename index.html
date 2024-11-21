@@ -13,22 +13,33 @@
     <title>9ja@PropertyHub</title>
   </head>
   <body>
+    <!-- HEADER -->
     <header>
       <nav class="navbar">
         <div class="logo">
           <img src="./images/Logo.svg" alt="9ja@PropertyHub" />
         </div>
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Buy</a>
-        <a href="#">Rent</a>
-        <a href="#">Companies</a>
-        <a href="#">Manage Rentals</a>
-        <a href="#">Login</a>
-        <button class="custom-btn">Register</button>
+        <div class="menu">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Buy</a>
+          <a href="#">Rent</a>
+          <a href="#">Companies</a>
+          <a href="#">Manage Rentals</a>
+          <a href="#">Login</a>
+          <button class="custom-btn">Register</button>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
     </header>
+
+    <!-- END OF HEADER -->
     <main>
+      <!-- HERO SECTION -->
       <section class="hero-section">
         <div class="hero-content">
           <h2>Look for the perfect location to get accommodation.</h2>
@@ -58,23 +69,22 @@
               </select>
             </div>
             <label for="property-type">Property Type</label>
-            <div class="custom-select">
+            <div class="custom-select bedroom-custom-select">
               <select class="dropdown" id="property-type">
                 <option value="4-bedroom-duplex">4 bedroom duplex</option>
-                <!-- Add more options as needed -->
               </select>
             </div>
             <label for="price">Price</label>
             <div class="custom-select">
               <select class="dropdown" id="price">
                 <option value="25000">$25000</option>
-                <!-- Add more options as needed -->
               </select>
             </div>
             <button class="search-btn">Search</button>
           </div>
         </div>
       </section>
+      <!-- END OF HERO SECTION -->
 
       <!-- Featured Section -->
       <section class="featured">
@@ -99,6 +109,7 @@
           <img src="./images/featured/featured-5.svg" alt="Property 5" />
         </div>
       </section>
+      <!-- END OF Featured Section -->
 
       <!-- Services Section -->
       <section class="services">
@@ -149,6 +160,8 @@
           </div>
         </div>
       </section>
+      <!-- END OF Services Section -->
+
       <!-- LIST OUT PROPERTIES -->
       <section class="properties">
         <div class="property-1">
@@ -209,6 +222,8 @@
           </div>
         </div>
       </section>
+      <!-- END OF LIST OUT PROPERTIES -->
+
       <!-- RECENTLY ADDED PROPERTIES -->
       <section class="more-properties">
         <h2>Recently Added Properties</h2>
@@ -480,6 +495,8 @@
           <button>Next</button>
         </div>
       </section>
+      <!-- END OF RECENTLY ADDED PROPERTIES -->
+
       <!-- ACHIEVEMENT -->
       <section class="achievement">
         <div class="achievement-content">
@@ -497,6 +514,8 @@
           </div>
         </div>
       </section>
+      <!-- END OF ACHIEVEMENT -->
+
       <!-- TESTIMONIALS -->
       <section class="testimonials">
         <h2>WHAT OUR CUSTOMERS SAY</h2>
@@ -568,6 +587,7 @@
           </div>
         </div>
       </section>
+      <!-- END OF TESTIMONIALS SECTION -->
 
       <!-- CTA -->
       <section class="cta">
@@ -595,6 +615,7 @@
           <img src="./images/Iphone.png" alt="iphone" />
         </div>
       </section>
+      <!-- END OF CTA -->
     </main>
     <!-- FOOTER -->
     <footer>
@@ -636,6 +657,7 @@
         <p>&COPY; | All rights reserved.</p>
       </div>
     </footer>
+    <!-- END OF FOOTER -->
     <script src="./index.js"></script>
   </body>
 </html>
