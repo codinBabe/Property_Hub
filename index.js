@@ -26,17 +26,9 @@ images.forEach((image) => {
 document.addEventListener("DOMContentLoaded", function () {
   const hamburger = document.querySelector(".hamburger");
   const menu = document.querySelector(".menu");
-  const navLinks = document.querySelectorAll(".nav-link");
 
   hamburger.addEventListener("click", function () {
     menu.classList.toggle("active");
-  });
-
-  const currentPath = window.location.pathname;
-  navLinks.forEach((link) => {
-    if (link.getAttribute("href") === currentPath) {
-      link.classList.add("nav-active");
-    }
   });
 });
 

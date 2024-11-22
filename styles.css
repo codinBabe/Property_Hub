@@ -74,12 +74,11 @@ header {
   color: var(--text-color);
 }
 
-.navbar .menu a:hover {
+.navbar .menu a:hover,
+.navbar .menu a:first-child {
   color: var(--primary-color);
 }
-.nav-active {
-  color: var(--primary-color);
-}
+
 /* Hamburger Menu */
 .hamburger {
   display: none;
