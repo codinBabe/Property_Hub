@@ -2,7 +2,7 @@
 
 ## Overview
 
-9jaPropertyHub is a web application that provides information about various properties, including featured properties, services, and testimonials. The application includes a custom dropdown for selecting price ranges and interactive elements for user engagement.
+9ja@PropertyHub is a web application that provides information about various properties, including featured properties, services, and testimonials. The application includes a custom dropdown for selecting price ranges and interactive elements for user engagement.
 
 ## Features
 

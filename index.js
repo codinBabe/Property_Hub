@@ -1,3 +1,5 @@
+// Description: This file contains the logic for the testimonial section, hamburger menu, and custom select.
+
 const images = document.querySelectorAll(".testimonial-images img");
 const nameElement = document.querySelector(".testimonial-details h3");
 const testimonialElement = document.querySelector(".testimonial-text");
@@ -20,15 +22,25 @@ images.forEach((image) => {
   });
 });
 
+// hamburger menu logic
 document.addEventListener("DOMContentLoaded", function () {
   const hamburger = document.querySelector(".hamburger");
   const menu = document.querySelector(".menu");
+  const navLinks = document.querySelectorAll(".nav-link");
 
   hamburger.addEventListener("click", function () {
     menu.classList.toggle("active");
   });
+
+  const currentPath = window.location.pathname;
+  navLinks.forEach((link) => {
+    if (link.getAttribute("href") === currentPath) {
+      link.classList.add("nav-active");
+    }
+  });
 });
 
+// custom select logic
 document.querySelectorAll(".custom-select").forEach((selectWrapper) => {
   const selectElement = selectWrapper.querySelector("select");
   const selectedDiv = document.createElement("div");
