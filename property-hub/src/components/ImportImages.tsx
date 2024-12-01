@@ -1,4 +1,3 @@
-import exp from "constants";
 import Logo from "../../public/images/Logo.svg";
 import arrowRight from "../../public/images/icons/arrow-forward.svg";
 import property1 from "../../public/images/featured/featured-1.svg";
