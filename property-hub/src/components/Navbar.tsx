@@ -1,14 +1,9 @@
-"use client";
 import Image from "next/image";
-import { useState } from "react";
-import { useRouter } from "next/router";
 import { Logo } from "./ImportImages";
 import Link from "next/link";
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  // const router = typeof window !== "undefined" ? useRouter() : { pathname: "" };
-
+  // const [menuOpen, setMenuOpen] = useState(false);
   const menu = [
     { name: "Home", link: "/" },
     { name: "About Us", link: "/about" },
