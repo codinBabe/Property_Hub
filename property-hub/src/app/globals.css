@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Light.tff") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  @apply font-roboto antialiased text-base text-text-color leading-7 scroll-smooth;
+}
+
+.hero-section {
+  background-image: url("/images/hero-bg.png");
+  @apply bg-cover bg-center bg-no-repeat h-screen p-[100px] flex flex-col justify-center;
+}
+
+.custom-btn {
+  @apply bg-primary-color text-white px-8 py-2 rounded-xl cursor-pointer shadow-md;
+}
+
+.linear-btn {
+  @apply mt-3 p-4 rounded-xl text-white border-0 cursor-pointer text-2xl font-montserrat font-light self-start;
+  background: linear-gradient(
+    93.76deg,
+    #1433ff -2.83%,
+    #c4c4c4 -2.82%,
+    #4960f9 -2.81%,
+    #1433ff 98.43%
+  );
+  box-shadow: 0 4px 15px 0 rgba(22, 33, 74, 0.1);
+}
+
+.services {
+  background-image: url("/images/SERVICES.svg");
+  @apply p-[100px] bg-contain bg-center bg-no-repeat flex items-center justify-center gap-8;
+}
+
+.achievement {
+  background-image: url("/images/blur-bg-img.svg");
+  @apply bg-cover bg-center bg-no-repeat p-24 flex flex-col justify-center;
+}
+
+.properties {
+  @apply py-[100px] font-montserrat text-primary-color;
+}
+
+.more-properties {
+  @apply p-[120px] text-text-color font-montserrat;
+}
+
+.amenities::after {
+  @apply mx-4 text-text-color text-2xl;
+  content: "|";
+}
+.btn-container button {
+  @apply bg-white border border-primary-color px-5 py-2 text-primary-color;
+}
+.btn-container button:first-child,
+.btn-container button:last-child {
+  @apply bg-primary-color text-white;
+}
+
+.images-wrapper img {
+  @apply w-[100px] h-[100px] rounded-full cursor-pointer;
+  transition: transform 0.3s ease, border 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.images-wrapper img.active {
+  width: 120px;
+  height: 120px;
+  transform: scale(1.1);
+}
