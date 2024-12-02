@@ -85,31 +85,35 @@ const propertiesData = [
 function RecentlyAddedProperties() {
   return (
     <section className="more-properties">
-      <h2 className="text-3xl font-semibold text-center mb-4">
+      <h2 className="text-2xl md:text-3xl font-semibold text-center mb-4">
         Recently Added Properties
       </h2>
-      <p className="text-xl text-center mb-8">
+      <p className="text-base md:text-xl text-center mb-8">
         This includes the list of properties that is been added to the platform
         recently.
       </p>
-      <div className="flex items-center justify-between gap-4 my-20">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-4 my-10 md:my-20">
         <p>Last updated: 12 Jun, 2021</p>
         <p>400 properties added.</p>
       </div>
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {propertiesData.map((property, index) => (
-          <div className="bg-white shadow-md max-w-[97%] h-80" key={index}>
-            <div className="flex items-center gap-4 p-4">
-              <div className="w-[70%] overflow-hidden">
+          <div
+            className="bg-white shadow-md w-full md:max-w-[97%] h-auto md:h-80"
+            key={index}
+          >
+            <div className="flex flex-col md:flex-row items-center gap-4 p-4">
+              <div className="w-full md:w-[70%] overflow-hidden">
                 <Image
                   src={property.image}
                   alt="Property 4"
                   width={300}
                   height={300}
+                  className="w-full"
                 />
               </div>
               <div>
-                <h3 className="text-xl font-medium text-primary-color underline">
+                <h3 className="text-lg md:text-xl font-medium text-primary-color underline">
                   Detached duplex for sale
                 </h3>
                 <div className="flex items-center gap-2 my-3">
@@ -119,20 +123,22 @@ function RecentlyAddedProperties() {
                   />
                   <p>{property.location}</p>
                 </div>
-                <p className="text-lg">{property.description}</p>
+                <p className="text-base md:text-lg">{property.description}</p>
                 <hr className="border-0 border-b-[0.5px] border-primary-color mt-4 -mx-3 mb-2" />
-                <p className="text-3xl font-semibold text-primary-color mt-2;">
+                <p className="text-2xl md:text-3xl font-semibold text-primary-color mt-2;">
                   {property.price}
                 </p>
               </div>
             </div>
-            <div className="flex justify-between items-center mt-2 border-t border-border-color py-2 px-4">
+            <div className="flex flex-col md:flex-row justify-between items-center mt-2 border-t border-border-color py-2 px-4">
               {property.amenities.map((amenity, index) => (
                 <div className="flex items-center gap-2 mt-2" key={index}>
                   <Image src={amenity.icon} alt={amenity.value} />
                   <p className="text-sm text-text-color">{amenity.value}</p>
                   {index < property.amenities.length - 1 && (
-                    <span className="mx-2 text-text-color text-2xl">|</span>
+                    <span className="hidden md:inline mx-2 text-text-color text-2xl">
+                      |
+                    </span>
                   )}
                 </div>
               ))}
@@ -140,7 +146,7 @@ function RecentlyAddedProperties() {
           </div>
         ))}
       </div>
-      <div className="btn-container flex justify-end mt-12">
+      <div className="btn-container flex justify-center md:justify-end mt-12">
         <button>Prev</button>
         <button>1</button>
         <button>2</button>

@@ -97,28 +97,24 @@ body {
 
 .services {
   background-image: url("/images/SERVICES.svg");
-  @apply p-[100px] bg-contain bg-center bg-no-repeat flex items-center justify-center gap-8;
+  @apply p-6 md:p-[100px] bg-contain bg-center bg-no-repeat flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8;
 }
 
 .achievement {
   background-image: url("/images/blur-bg-img.svg");
-  @apply bg-cover bg-center bg-no-repeat p-24 flex flex-col justify-center;
+  @apply bg-cover bg-center bg-no-repeat p-6 md:p-24 flex flex-col md:flex-row justify-center;
 }
 
 .properties {
-  @apply py-[100px] font-montserrat text-primary-color;
+  @apply py-6 md:py-24 font-montserrat text-primary-color;
 }
 
 .more-properties {
-  @apply p-[120px] text-text-color font-montserrat;
+  @apply p-6 md:p-[120px] text-text-color font-montserrat;
 }
 
-.amenities::after {
-  @apply mx-4 text-text-color text-2xl;
-  content: "|";
-}
 .btn-container button {
-  @apply bg-white border border-primary-color px-5 py-2 text-primary-color;
+  @apply bg-white border border-primary-color px-3 py-1 md:px-5 md:py-2 text-primary-color;
 }
 .btn-container button:first-child,
 .btn-container button:last-child {
@@ -126,13 +122,12 @@ body {
 }
 
 .images-wrapper img {
-  @apply w-[100px] h-[100px] rounded-full cursor-pointer;
+  @apply w-[80px] h-[80px] md:w-[100px] md:h-[100px] rounded-full cursor-pointer;
   transition: transform 0.3s ease, border 0.3s ease;
   border: 2px solid transparent;
 }
 
 .images-wrapper img.active {
-  width: 120px;
-  height: 120px;
+  @apply w-[100px] h-[100px] md:w-[120px] md:h-[120px];
   transform: scale(1.1);
 }

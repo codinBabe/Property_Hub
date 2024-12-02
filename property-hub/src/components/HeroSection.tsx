@@ -25,10 +25,11 @@ const HeroSection = () => {
   ];
   const propertyTypes = ["4 bedroom duplex"];
   const prices = ["$25000"];
+
   return (
     <section className="hero-section">
-      <div className="mt-16 text-white max-w-[620px]">
-        <h1 className="text-[2.8rem] font-semibold mb-4 leading-tight">
+      <div className="mt-16 text-white md:max-w-[620px]">
+        <h1 className="md:text-[2.8rem] font-semibold mb-4 leading-tight">
           Look for the perfect location to get accommodation.
         </h1>
         <p className="text-xl mb-6">
@@ -45,7 +46,7 @@ const HeroSection = () => {
             Rent
           </button>
         </div>
-        <div className="flex items-center gap-6 flex-wrap bg-white w-[70%] py-[10px] px-5 rounded-sm">
+        <div className="flex items-center gap-6 flex-wrap bg-white w-full md:w-[70%] py-[10px] px-5 rounded-sm">
           {/* Custom Select for Location */}
           <div className="relative flex items-center gap-2">
             <label className="mr-[10px]">Location</label>
